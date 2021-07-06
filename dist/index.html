@@ -1,0 +1,397 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body id="body">
+    <header>
+        <nav class="nav container">
+            <div class="brand-logo">
+                <a href="#">COVID-19 <i class='bx bxs-virus'></i></a>
+            </div>
+
+            <div class="nav-toggle">
+                <i class='bx bx-menu' ></i>
+            </div>
+
+            <div class="nav-menu">
+                <div class="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+                <ul class="nav-list">
+                    <li class="list-item"><a href="#" class="nav-links">Home</a></li>
+                    <li class="list-item"><a href="data.html" class="nav-links">Statistics</a></li>
+                    <li class="list-item"><a href="#prevention" class="nav-links">Precautions</a></li>
+                    <li class="list-item"><a href="#symptoms" class="nav-links">Symptoms</a></li>
+                    <li class="list-item"><a href="#news" class="nav-links">News</a></li>
+                </ul>
+            </div>
+         </nav>
+    </header>
+
+    <section class="scroll-btn">
+        <a href="#" id="top-btn" class="active">
+            <i class='bx bxs-up-arrow-alt'></i> 
+        </a>
+    </section>
+
+    <main>
+        <section class="showcase">
+            <div class="showcase-container container">
+                <div class="showcase-profile">
+                    <img src="./asset/img/sars-cov-19-removebg-preview.png" alt="" class="covid-img">
+                </div>
+                <div class="showcase-data">
+                    <h5>COVID-19 AWARENESS</h5>
+                    <h1>Stay Safe. Stay Home</h1>
+                    <p>Stay informed. If we pay attention to each other, we may protect ourselves from getting sick.</p>
+                    <a href="#" class="primary-btn"> How to Prevent</a>   
+                </div>
+            </div>
+        </section>
+        
+        <section class="stats">
+            <div class="container">
+                <h1>Coronavirus Statistics</h1>
+                <p class="sub-heading">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, est iure fugiat temporibus omnis repellendus!</p>
+                <div class="stat">
+                    <div>
+                        <i class='bx bxs-virus'></i>
+                        <p class="figures" id="global-total"></p>
+                        <p>Total Cases</p>
+                    </div>
+                    <div>
+                        <i class='bx bxs-bullseye'></i>
+                        <p class="figures" id="global-active"></p>
+                        <p>Active Cases</p>
+                    </div>
+                    <div>
+                        <i class='bx bxs-virus-block'></i>
+                        <p class="figures" id="global-death"></p>
+                        <p>Total Deaths</p>
+                    </div>
+                    <div>
+                        <i class='bx bx-donate-heart'></i>
+                        <p class="figures" id="global-recoveries"></p>
+                        <p>Total Recoveries</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="profile">
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/sHP0UIdZyI4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="data">
+                        <h2>What is Coronavirus?</h2>
+                        <p>The World Health Organization declared the new Coronavirus disease (COVID-19) outbreak a global health emergency in January 2020.</p>
+                        <ul>
+                            <li><a href="#"><i class='bx bx-check-circle'></i>What causes Covid19? </a></li>
+                            <li><a href="#"> <i class='bx bx-check-circle'></i>How does it spread?</a></li>
+                            <li><a href="#"><i class='bx bx-check-circle'></i>How is it cured?</a></li>
+                        </ul>
+                        <a href="#" class="btn primary-btn">Learn more</a>
+                    </div>
+                </div>
+                <div class="sub-about">
+                    <div class="icon-box">
+                        <i class='bx bx-shield-alt-2'></i>
+                        <div>
+                            <span>Protection</span>
+                            <p>Stay home</p>
+                        </div>
+                    </div>
+                    <div class="icon-box">
+                        <i class='bx bxs-face-mask' ></i>
+                        <div>
+                            <span>Prevention</span>
+                            <p>Use facemask</p>
+                        </div> 
+                    </div>
+                    <div class="icon-box">
+                        <i class='bx bxs-capsule'></i>
+                        <div>
+                            <span>Treatment</span>
+                            <p>Get vaccinated</p>
+                        </div>   
+                    </div>
+                    <div class="icon-box">
+                        <i class='bx bx-pulse'></i>
+                        <div>
+                            <span>Symptoms</span>
+                            <p>Fever, Cough</p>
+                        </div>   
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+        <section class="prevention" id="prevention">
+            <div class="container">
+                <div class="content">
+                    <div class="cards">
+                        <div class="card">
+                            <div class="card-heading">
+                                <i class='bx bx-home'></i>
+                            </div>
+                            <div class="card-body">
+                                <h4>Stay Home</h4>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-heading">
+                                <i class='bx bx-move-horizontal'></i>
+                            </div>
+                            <div class="card-body">
+                                <h4>Keep social distance</h4>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-heading">
+                                <i class='bx bxs-face-mask'></i>
+                            </div>
+                            <div class="card-body">
+                                <h4>Wear facemask</h4>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-heading">
+                                <i class='bx bxs-donate-blood'></i>
+                            </div>
+                            <div class="card-body">
+                                <h4>Wash hands</h4>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="data">
+                        <h2>How to Prevent Coronavirus?</h2>
+                        <p>The World Health Organization declared the new Coronavirus disease (COVID-19) outbreak a global health emergency in January 2020.</p>
+                        <ul>
+                            <li><a href="#"><i class='bx bx-check-circle'></i>What causes Covid19? </a></li>
+                            <li><a href="#"> <i class='bx bx-check-circle'></i>How does it spread?</a></li>
+                            <li><a href="#"><i class='bx bx-check-circle'></i>How is it cured?</a></li>
+                        </ul>
+                        <a href="#" class="btn primary-btn">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="protection container">
+            <h1> How To Protect Yourself</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, dolores.</p>
+            <div class="content">
+                <div class="data">
+                    <ul class="dos">
+                        <li class="title">You should </li>
+                        <li><i class='bx bx-check-circle'></i> Wear a mask</li>
+                        <li><i class='bx bx-check-circle'></i> Stay at home</li>
+                        <li><i class='bx bx-check-circle'></i> Use Sanitizer</li>
+                        <li><i class='bx bx-check-circle'></i> Disinfect your home</li>
+                        <li><i class='bx bx-check-circle'></i> Wash your hands</li>
+                        <li><i class='bx bx-check-circle'></i> Frequent self-isolation</li>
+                    </ul>
+
+                    <ul class="dont">
+                        <li class="title">You should avoid</li>
+                        <li><i class='bx bx-x'></i> Infected people</li>
+                        <li><i class='bx bx-x'></i> Crowded places</li>
+                        <li><i class='bx bx-x'></i> Handshaking</li>
+                        <li><i class='bx bx-x'></i> infected surfaces</li>
+                        <li><i class='bx bx-x'></i> Touching your face</li>
+                        <li><i class='bx bx-x'></i> Droplets</li>
+                    </ul>
+
+                </div>
+                <div class="img">
+                    <img src="./asset/img/shield.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="symptoms" id="symptoms">
+            <div class="container">
+                <div class="heading">
+                    <h1>Symptoms of Coronavirus</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, consequatur!</p>
+                </div>
+                <div class="content">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./asset/img/symptom_high-fever.png" alt="high-fever"/>
+                        </div>
+                        <div>
+                            <span>High Fever</span>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, et?</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./asset/img/symptom_cough.png" alt="cough">
+                        </div>
+                        <div>
+                            <span>Cough</span>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, et?</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./asset/img/symptom_headache.png" alt="symptom_headache">
+                        </div>
+                        <div>
+                            <span>Headache</span>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, et?</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./asset/img/symptom_sore-troath.png" alt="symptom_sore-troath">
+                        </div>
+                        <div>
+                            <span>Sore Throat</span>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, et?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="stay">
+                    <p>If you feel unwell. <span>Stay at home and call your doctor:</span> Do not get in-touch with anybody</p>
+                    <a href="#" class="primary-btn"> <i class='bx bx-phone'></i>  Help line</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="news" id="news">
+            <div class="container">
+                <div class="heading">
+                    <h1>News and Updates</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, blanditiis.</p>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./asset/img/covid-1.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p>Effect of covid on the economy</p>
+                            <div class="btn-container">
+                                <a href="#" class="btn">Read more</a>
+                                <span class="date">June 3, 2020</span>
+                            </div>
+                            <hr>
+                            <div class="post">
+                                <span><i class='bx bx-message-alt-detail'></i> 24 comments</span>
+                                <span><i class='bx bx-like'></i> 40 likes</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./asset/img/covid-1.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p>Effect of covid on the economy</p>
+                            <div class="btn-container">
+                                <a href="#" class="btn">Read more</a>
+                                <span class="date"> June 3,2020</span>
+                            </div>
+                            <hr>
+                            <div class="post">
+                                <span><i class='bx bx-message-alt-detail'></i> 24 comments</span>
+                                <span><i class='bx bx-like'></i> 40 likes</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./asset/img/covid-1.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p>Effect of covid on the economy</p>
+                            <div class="btn-container">
+                                <a href="#" class="btn">Read more</a>
+                                <span class="date"> June 3, 2020</span>
+                            </div>
+                            <hr>
+                            <div class="post">
+                                <span><i class='bx bx-message-alt-detail'></i> 24 comments</span>
+                                <span><i class='bx bx-like'></i> 40 likes</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="content">
+                <div class="about">
+                    <h4>About</h4>
+                    <p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.</p>
+                    <div class="socials">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                        <a href="#"><i class='bx bxl-google'></i></a>
+                    </div>
+                </div>
+
+                <div class="q-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Symptoms</a></li>
+                        <li><a href="#">Preventions</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Stats and Updates</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="h-links">
+                    <h4>Helpful Links</h4>
+                    <ul>
+                        <li><a href="#">Frontline workers</a></li>
+                        <li><a href="#">Health Facilities</a></li>
+                        <li><a href="#">Vaccination</a></li>
+                        <li><a href="#">Protect your family</a></li>
+                        <li><a href="#">World Health</a></li>
+                    </ul>
+                </div>
+
+                <div class="resources">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">WHO website</a></li>
+                        <li><a href="#">CDC Website</a></li>
+                        <li><a href="#">Gov Website</a></li>
+                        <li><a href="#">GHS Website</a></li>
+                        <li><a href="#">MoH Website</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="dev-space">
+            <p>Copyright &copy; 2021 All rights reserved | Created by <a href="#">gohohodanni@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script src="./asset/js/covid_api.js"></script>
+    <script src="./asset/js/ui.js"></script>
+    <script src="./asset/js/main.js"></script>
+</body>
+</html>

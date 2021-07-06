@@ -1,0 +1,72 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+//color
+$primary-color: #F79489;
+$secondary-color: #F8AFA6;
+$tetiary-color: #FADCD9;
+$complimentary-color: #F9F1F0;
+$white-color: #fcf8f8;
+$dark-color:#9b3331;
+
+//font
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400&display=swap');
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    font-size: 30px;
+}
+.container{
+    max-width: 1174px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+@mixin mediaSm {
+    @media screen and (max-width:480px) {
+        @content;
+        
+    }    
+}
+
+@mixin mediaMeduim {
+    @media screen and (max-width: 768px) {
+        @content;
+        
+    }
+    
+}
+
+@mixin mediaLarge {
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+        @content;
+        
+    }
+}
+
+@mixin mediaXL {
+    @media screen and (min-width:1170px) {
+        @content;
+        
+    }   
+}

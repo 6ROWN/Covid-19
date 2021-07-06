@@ -1,0 +1,217 @@
+
+//extra large screen
+@include mediaXL{
+
+}
+
+//Large screen
+@include mediaLarge{
+    main{
+        .showcase{
+           
+        }
+    }
+
+
+
+}
+
+//tablet screen
+@include mediaMeduim{
+    header{
+        .nav{
+            &-toggle, &-close{
+                display: block;
+                cursor: pointer;
+                color: $white-color;
+            }
+
+            &-menu{
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                height: 100%;
+                padding: 3.5rem 1.5rem 0;
+                background: #f4978e;
+                backdrop-filter: blur(10px);
+                transition: .5s;
+                z-index: 1000;
+
+                .nav-list{
+                    display: block;
+
+                    .list-item{
+                        margin-bottom: 1.75rem;
+                    }
+                }
+            }
+
+            .show{
+                right: 0;
+            }
+
+            &-close{
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                font: 1rem;
+            }
+        }
+    }
+
+    main{        
+        .showcase{
+            &-container{
+                display: block;
+                margin: auto;
+            }
+        }
+
+        .stats{
+            p{
+                line-height: 2rem;
+            }
+        }
+        
+
+        .about{
+            .profile{
+                grid-template-columns: 1fr;
+
+                .data{
+
+                    h1{
+                        text-align: center;
+                    }
+
+                    p{
+                        line-height: 2rem;
+                    }
+
+                }
+            }
+
+            .sub-about{
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 2rem;
+                
+            }
+        }
+
+        .prevention{
+            .content{
+                display: block;
+                margin: auto;
+
+                .data{
+                    h2{
+                        text-align: center;
+                        margin-top: 3rem;
+                    }
+
+                    p{
+                        line-height: 2rem;
+                    }
+                }
+            }
+        }
+
+        .protection{
+            p{
+                line-height: 2rem;
+            }
+            .content{
+                grid-template-columns: 1fr;
+                margin-top: 3rem;
+            }
+
+        }
+
+        .symptoms{
+            p{
+                line-height: 2rem;
+            }
+            .content{
+                grid-template-columns: 1fr;
+            }
+
+            .stay{
+                display: block;
+            }
+        }
+
+        .news{
+            p{
+                line-height: 2rem;
+            }
+            .cards{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+
+}
+
+//small screen 
+@include mediaSm{
+    main{
+        .stats{
+            .stat{
+                grid-template-columns: 1fr;
+                grid-gap: 1.5rem 0;
+            }
+        }
+
+        .about{
+            .sub-about{
+                grid-template-columns: 1fr;
+                
+            }
+        }
+
+
+        .protection{
+            .content{
+                grid-template-columns: 1fr;
+                margin-top: 3rem;
+
+                .data{
+                    display: block;
+                    margin: 0 auto;
+
+                    .dont{
+                        margin-top: 2rem;
+
+                    }
+                }
+            }
+        }
+
+        .symptoms{
+            .content{
+                grid-template-columns: 1fr;
+            }
+
+            .stay{
+                
+            }
+        }
+
+        .news{
+            .cards{
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    footer{
+        .content{
+            grid-template-columns: 1fr;
+        }
+    }
+
+}
+
+
+
