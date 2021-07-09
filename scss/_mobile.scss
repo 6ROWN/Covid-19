@@ -6,14 +6,7 @@
 
 //Large screen
 @include mediaLarge{
-    main{
-        .showcase{
-           
-        }
-    }
-
-
-
+    
 }
 
 //tablet screen
@@ -156,6 +149,28 @@
 //small screen 
 @include mediaSm{
     main{
+        .showcase-data{
+            h1{
+                font-size: 24px;
+                
+            }
+
+            p{
+                margin-bottom: 0;
+            }
+
+            .primary-btn{
+                width: 50%;
+            }
+        }
+
+        .showcase-profile{
+            img{
+                height: 45%;
+            }
+        }
+        
+
         .stats{
             .stat{
                 grid-template-columns: 1fr;
@@ -191,10 +206,6 @@
         .symptoms{
             .content{
                 grid-template-columns: 1fr;
-            }
-
-            .stay{
-                
             }
         }
 
